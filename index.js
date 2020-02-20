@@ -22,6 +22,23 @@ const userResponse = await inquirer
       message: "Please provide a detialed description of your project.",
       name: "projectDescription"
     },
+    {
+        type: "input",
+        message: "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.",
+        name: "installation"
+    },
+    {
+        type: "input",
+        message: "Provide instructions and examples for use.",
+        name: "usage"
+    },
+    {
+        type: "input",
+        message: "List your collaborators, if any, with links to their GitHub profiles.\nIf you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.\nIf you followed tutorials, include links to those here as well.",
+        name: "usage"
+    },
+      
+    
   ])
 
   let userName = userResponse.username;
@@ -45,17 +62,19 @@ fs.writeFile("README.md",
 ${userResponse.projectDescription}
 
 * [Installation](#Installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
+* [Usage](#Usage)
+* [Credits](#Credits)
+* [License](#License)
 
 ## Installation
+${userResponse.installation}
 
 ## Usage
+${userResponse.usage}
 
 ## Credits
 
-##Licence 
+## Licence 
 `
 , function(err) {
 
