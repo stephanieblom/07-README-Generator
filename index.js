@@ -67,6 +67,8 @@ console.log('Name: ' + name);
 console.log('url: ' + url);
 console.log(`Done`)
 
+//credits.split(",");
+
 
 fs.writeFile("README.md", 
 `![badge](https://img.shields.io/badge/<hello>-<world>-<ff69b4>)
@@ -96,8 +98,10 @@ ${userResponse.tests}
 
 ## Questions 
 ![GitHub Logo](${img})
+
 Format: ![Alt Text](url)
-Email: [link to Email!](${email})
+
+Email: [${email}](${email})
 
 `
 , function(err) {
