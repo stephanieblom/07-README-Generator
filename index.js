@@ -71,7 +71,7 @@ console.log(`Done`)
 
 
 fs.writeFile("README.md", 
-`![badge](https://img.shields.io/badge/<hello>-<${name}>-<ff69b4>)
+`![badge](https://img.shields.io/badge/<hello>-<${userName}>-<ff69b4>)
 # ${userResponse.projectTitle}
 ${userResponse.projectDescription}
 
