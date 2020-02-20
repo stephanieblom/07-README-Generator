@@ -35,9 +35,19 @@ const userResponse = await inquirer
     {
         type: "input",
         message: "List your collaborators, if any, with links to their GitHub profiles.\nIf you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.\nIf you followed tutorials, include links to those here as well.",
-        name: "usage"
+        name: "credits"
     },
-      
+    {
+        type: "input",
+        message: "If you would like to add a licence for you respository, please input the one you would like here. Otherwise, proceed by clikcing enter",
+        name: "license"
+    },
+    {
+        type: "input",
+        message: "If you would like write tests for your application. Then provide examples on how to run them. Otherwise, proceed by clikcing enter",
+        name: "tests"
+    },
+        
     
   ])
 
@@ -51,6 +61,8 @@ const gitData = result.data;
 
 const name = gitData.name;
 const url = gitData.url;
+const img = gitData.avatar_url;
+const email = gitData.email;
 console.log('Name: ' + name);
 console.log('url: ' + url);
 console.log(`Done`)
@@ -65,6 +77,7 @@ ${userResponse.projectDescription}
 * [Usage](#Usage)
 * [Credits](#Credits)
 * [License](#License)
+* [Tests](#Tests)
 
 ## Installation
 ${userResponse.installation}
@@ -73,8 +86,19 @@ ${userResponse.installation}
 ${userResponse.usage}
 
 ## Credits
+${userResponse.credits}
 
-## Licence 
+## License 
+${userResponse.license}
+
+## Tests
+${userResponse.tests}
+
+##Questions 
+![GitHub Logo](${img})
+Format: ![Alt Text](url)
+Email: ${email}
+
 `
 , function(err) {
 
