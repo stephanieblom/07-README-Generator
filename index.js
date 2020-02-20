@@ -69,7 +69,7 @@ console.log(`Done`)
 
 
 fs.writeFile("README.md", 
-`![badmath](https://img.shields.io/badge/<hello>-<world>-<ff69b4>)
+`![badge](https://img.shields.io/badge/<hello>-<world>-<ff69b4>)
 # ${userResponse.projectTitle}
 ${userResponse.projectDescription}
 
@@ -94,10 +94,10 @@ ${userResponse.license}
 ## Tests
 ${userResponse.tests}
 
-##Questions 
+## Questions 
 ![GitHub Logo](${img})
 Format: ![Alt Text](url)
-Email: ${email}
+Email: [link to Email!](${email})
 
 `
 , function(err) {
