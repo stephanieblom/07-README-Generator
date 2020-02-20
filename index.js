@@ -13,10 +13,15 @@ const userResponse = await inquirer
       name: "username"
     },  
     {
-        type: "input",
-        message: "What is your project title?",
-        name: "projectTitle"
-      },  
+      type: "input",
+      message: "What is your project title?",
+      name: "projectTitle"
+    },  
+    {
+      type: "input",
+      message: "Please provide a detialed description of your project.",
+      name: "projectDescription"
+    },
   ])
 
   let userName = userResponse.username;
@@ -35,11 +40,23 @@ console.log(`Done`)
 
 
 fs.writeFile("README.md", 
-`![badmath](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>)
+`![badmath](https://img.shields.io/badge/<hello>-<world>-<ff69b4>)
 # ${userResponse.projectTitle}
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag`
+${userResponse.projectDescription}
+
+* [Installation](#Installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+
+## Installation
+
+## Usage
+
+## Credits
+
+##Licence 
+`
 , function(err) {
 
   if (err) {
