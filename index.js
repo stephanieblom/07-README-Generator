@@ -35,7 +35,7 @@ console.log(`Done`)
 
 
 fs.writeFile("README.md", 
-`![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+`![badmath](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>)
 # ${userResponse.projectTitle}
 # This is an <h1> tag
 ## This is an <h2> tag
