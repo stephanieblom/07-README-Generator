@@ -1,6 +1,6 @@
-![badge](https://img.shields.io/badge/<hello>-<world>-<ff69b4>)
-# Good README Generator
-This repo creates a README based on the info provided by the user. The user is promped to fill in information that will popula
+![badge](https://img.shields.io/badge/<hello>-<Stephanie Blom>-<ff69b4>)
+# README Generator
+This project generates a README based on information provided from the user. This process is done using the terminal on your computer with node js. 
 
 * [Installation](#Installation)
 * [Usage](#Usage)
@@ -9,24 +9,23 @@ This repo creates a README based on the info provided by the user. The user is p
 * [Tests](#Tests)
 
 ## Installation
-In your console using node js run this file (once npm has been installed). Run file by typing "node index.js". Answer the prompts to GENER
+You must have node js installed. Once that is installed you must initialize npm (npm init). Once npm has been initiallized, you must install inquirer, fs, and axios (npm install fs). 
 
 ## Usage
-In your console using node js run this file (once npm has been installed). Run file by typing "node index.js". Answer the prompts to GENER
+Once installations are complete... run the file using node (node index.js). Follow the prompts from your terminal and a README.md will be generated for you. 
 
 ## Credits
-ATE your README
+Used Node and NPM 
 
 ## License 
 MIT
 
 ## Tests
-TEST 123
+Test 123
 
 ## Questions 
 ![GitHub Logo](https://avatars2.githubusercontent.com/u/58857277?v=4)
 
-Format: ![Alt Text](url)
 
 Email: [null](null)
 

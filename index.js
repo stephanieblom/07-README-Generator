@@ -71,7 +71,7 @@ console.log(`Done`)
 
 
 fs.writeFile("README.md", 
-`![badge](https://img.shields.io/badge/<hello>-<world>-<ff69b4>)
+`![badge](https://img.shields.io/badge/<hello>-<${name}>-<ff69b4>)
 # ${userResponse.projectTitle}
 ${userResponse.projectDescription}
 
@@ -99,7 +99,6 @@ ${userResponse.tests}
 ## Questions 
 ![GitHub Logo](${img})
 
-Format: ![Alt Text](url)
 
 Email: [${email}](${email})
 
@@ -110,7 +109,7 @@ Email: [${email}](${email})
     return console.log(err);
   }
 
-  console.log("Success! Created your file in info.txt");
+  console.log("Success! Created your file: README.md");
 
 });
 };
